@@ -1,0 +1,12 @@
+"use client";
+
+import EnrollPageComponent from "@/components/enroll_page/entroll_page_component";
+
+export default function EnrollPage({ params, searchParams }) {
+  const course_id = params.course_id;
+  return (
+    <div>
+      <EnrollPageComponent></EnrollPageComponent>
+    </div>
+  );
+}

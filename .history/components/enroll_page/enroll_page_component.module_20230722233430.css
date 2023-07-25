@@ -1,0 +1,59 @@
+.container {
+}
+
+.hero_container {
+  background: rgb(57, 101, 137);
+  background: -moz-linear-gradient(
+    106deg,
+    rgba(57, 101, 137, 1) 0%,
+    rgba(32, 140, 63, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    106deg,
+    rgba(57, 101, 137, 1) 0%,
+    rgba(32, 140, 63, 1) 100%
+  );
+  background: linear-gradient(
+    106deg,
+    rgba(57, 101, 137, 1) 0%,
+    rgba(32, 140, 63, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#396589",endColorstr="#208c3f",GradientType=1);
+
+  /*  */
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 1rem;
+  align-items: center;
+}
+
+.sub_container {
+  min-width: 90%;
+  background-color: white;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.course_name {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.offered_by_info_container {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+
+  background-color: var(--accent-color);
+  width: max-content;
+  padding: 0.5rem;
+}
+
+.offered_by {
+  font-style: italic;
+  color: var(--un-important-color);
+}

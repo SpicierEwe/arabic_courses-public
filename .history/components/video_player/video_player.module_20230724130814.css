@@ -1,0 +1,34 @@
+.test {
+  font-size: 2rem;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: olive;
+  overflow-y: scroll;
+  padding: 4rem 0;
+}
+
+.video_player_container {
+  width: 100%;
+  overflow: hidden;
+  /* background-color: red; */
+  padding: 5rem;
+}
+
+.video_player,
+.video_place_holder {
+  width: 80%;
+  height: 90%;
+  background-color: aqua;
+  display: none;
+}
+
+.video_place_holder {
+  display: block;
+}

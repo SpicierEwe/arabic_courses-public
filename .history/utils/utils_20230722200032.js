@@ -1,0 +1,45 @@
+import { BsStarFill } from "react-icons/bs";
+import { BsStarHalf } from "react-icons/bs";
+import { BsStar } from "react-icons/bs";
+
+export function display_stars_function(rating_number) {
+  const icon_size = 15;
+  const filled_star = <BsStarFill className={styles.star} size={icon_size} />;
+  const half_star = <BsStarHalf className={styles.star} size={icon_size} />;
+  const empty_star = <BsStar className={styles.star} size={icon_size} />;
+
+  const x = [];
+
+  // checking if the rating number is decimal
+  if (rating_number % 1 != 0) {
+    const a = Math.floor(rating_number);
+    const b = rating_number % 1;
+
+    console.log(a);
+    console.log(b);
+
+    for (let i = 0; i < a; i++) {
+      x.push(filled_star);
+    }
+
+    if (b == 0.5) {
+      x.push(half_star);
+    }
+
+    const remaing_strs = 5 - (a + 1);
+    for (let i = 0; i < remaing_strs; i++) {
+      x.push(empty_star);
+    }
+  } else {
+    for (let i = 0; i < rating_number; i++) {
+      x.push(filled_star);
+    }
+
+    const remaing_strs = 5 - rating_number;
+    for (let i = 0; i < remaing_strs; i++) {
+      x.push(empty_star);
+    }
+  }
+
+  return x;
+}

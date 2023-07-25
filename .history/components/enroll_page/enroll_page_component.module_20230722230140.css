@@ -1,0 +1,8 @@
+.container {
+}
+
+.hero_container {
+  background-image: linear-gradient(to left, #149f1b 0.5, #3d6094);
+  display: flex;
+  flex-direction: column;
+}

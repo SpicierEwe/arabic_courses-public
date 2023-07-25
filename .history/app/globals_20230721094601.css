@@ -1,0 +1,26 @@
+:root {
+  --primary-color: var(#0077b6);
+  --secondary-color: var(#10a510);
+  --accent-color: var(#eff3f9);
+  --neutral-color: var(#ffff);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

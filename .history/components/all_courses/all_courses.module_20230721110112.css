@@ -1,0 +1,79 @@
+.container {
+  max-width: 120rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+  margin: 2rem 0;
+}
+
+.card {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  position: relative;
+  overflow: hidden;
+  margin: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* image style */
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.info_container {
+  padding: 1rem 0rem;
+}
+
+/* author info container */
+.author_info_container,
+.difficulty_and_duration {
+  background-color: var(--accent-color);
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+}
+
+.author_info_container > p {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--unimportant_font_color);
+  margin-bottom: 0.2rem;
+}
+.author_info_container > h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+/* info below author container */
+
+.sub_info_container {
+  margin: 2rem 0;
+  padding: 0 1.5rem;
+}
+
+.title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.outcome_container {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+
+.difficulty_and_duration {
+  font-size: 1.3rem;
+}

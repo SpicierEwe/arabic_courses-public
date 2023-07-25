@@ -1,0 +1,174 @@
+.container {
+}
+
+.hero_container_bg {
+  background: rgb(37, 75, 106);
+  background: -moz-linear-gradient(
+    106deg,
+    rgba(37, 75, 106, 1) 0%,
+    rgba(32, 140, 63, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    106deg,
+    rgba(37, 75, 106, 1) 0%,
+    rgba(32, 140, 63, 1) 100%
+  );
+  background: linear-gradient(
+    106deg,
+    rgba(37, 75, 106, 1) 0%,
+    rgba(32, 140, 63, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#254b6a",endColorstr="#208c3f",GradientType=1);
+}
+
+.hero_container {
+  /*  */
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+
+  color: white;
+}
+
+.sub_container {
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  padding: 2rem;
+  font-size: 1.2rem;
+
+  /* Optional: You can add a solid color as a fallback for browsers that don't support backdrop-filter */
+  background-color: rgba(255, 255, 255, 0.15);
+  /* Set the blend mode to create a glass-like effect */
+  background-blend-mode: overlay;
+  /* Apply the frosted glass effect (may not work in all browsers) */
+  backdrop-filter: blur(20px);
+}
+
+.course_name {
+  font-size: 1.81rem;
+  font-weight: 600;
+  margin-bottom: 1.7rem;
+}
+
+.offered_by_info_container {
+  font-size: 1.2rem;
+
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+
+  /* background-color: var(--accent-color); */
+  background-color: var(--accent-color);
+  width: max-content;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2rem;
+
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.offered_by {
+  font-style: italic;
+  color: var(--unimportant_font_color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.rating_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.hero_sub_container_2 {
+  font-size: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+}
+
+.display_right_hero_item {
+  display: flex;
+  column-gap: 1.9rem;
+}
+
+/* Reset default button styles */
+
+/* Modern button style */
+.enroll_button {
+  background-color: var(--neutral-color);
+  color: var(--font_color);
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  width: max-content;
+  margin-top: 2.5rem;
+  border: 0.1rem solid white;
+}
+
+.enroll_button:hover {
+  background-color: var(--primary-color);
+  /* border: 0.1rem solid var(--primary-color); */
+  color: white;
+  transform: scale(1.05);
+}
+
+/* media queries------------------------ */
+
+@media (min-width: 768px) {
+  .hero_container {
+    flex-direction: row;
+    align-items: stretch;
+
+    column-gap: 10rem;
+    justify-content: center;
+    padding: 5rem;
+  }
+
+  .sub_container {
+    padding: 3rem;
+    font-size: 1.7rem;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .course_name {
+    font-size: 2.9rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .offered_by_info_container {
+    font-size: 1.5rem;
+    margin-bottom: 1.9rem;
+    color: #000;
+  }
+
+  .rating_container {
+    margin: 2.5rem 0;
+  }
+
+  .hero_sub_container_1 {
+    width: 50%;
+  }
+  .hero_sub_container_2 {
+    width: 30%;
+    font-size: 1.65rem;
+    row-gap: 1.9rem;
+  }
+
+  .enroll_button {
+    margin-top: 3rem;
+  }
+
+  .icon_size {
+    font-size: 5rem;
+  }
+}

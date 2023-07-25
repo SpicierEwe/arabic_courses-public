@@ -1,0 +1,14 @@
+.title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.image {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}

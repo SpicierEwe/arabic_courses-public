@@ -1,0 +1,29 @@
+.main_container {
+  display: flex;
+
+  max-height: 100%;
+}
+
+.side_bar_container {
+  background-color: var(--accent-color);
+  min-height: 100vh;
+
+  flex: 1;
+}
+
+.main_content_container {
+  flex: 4;
+
+  background-color: blue;
+}
+
+.section_name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--unimportant_font_color);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+
+  margin-top: 1rem;
+}

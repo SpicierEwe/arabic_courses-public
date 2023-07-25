@@ -1,0 +1,8 @@
+.container {
+}
+
+.hero_container {
+  background-color: ;
+  display: flex;
+  flex-direction: column;
+}

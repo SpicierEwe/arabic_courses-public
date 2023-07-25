@@ -1,0 +1,33 @@
+:root {
+  --primary-color: #0077b6;
+  --secondary-color: #10a510;
+  --accent-color: #eff3f9;
+  --neutral-color: #ffff;
+
+  --font_color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--font_color);
+
+  background-color: var(--neutral-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

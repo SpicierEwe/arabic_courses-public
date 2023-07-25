@@ -1,0 +1,8 @@
+.container {
+}
+
+.hero_container {
+  background-image: linear-gradient(to bottom, #ff0000, #00ff00);
+  display: flex;
+  flex-direction: column;
+}

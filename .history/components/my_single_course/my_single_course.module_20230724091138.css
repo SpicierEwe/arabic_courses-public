@@ -1,0 +1,64 @@
+.main_container {
+  display: flex;
+
+  min-height: 100vh;
+}
+
+.side_bar_container {
+  flex: 1;
+  background-color: var(--accent-color);
+  padding: 10rem 3rem;
+
+  height: 100vh;
+  overflow-y: scroll;
+  width: 25%;
+}
+
+.main_content_container {
+  width: 75%;
+
+  background-color: blue;
+}
+
+.section_name,
+.dvd_number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--unimportant_font_color);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+
+  margin-top: 1rem;
+}
+
+.dvd_container {
+  border-radius: 0.5rem;
+  background-color: var(--accent-color);
+  padding: 2.5rem 0 2.5rem 0;
+  cursor: pointer;
+  background-color: pink;
+}
+
+.dvd_number {
+  font-size: 1.3rem;
+  margin: 2rem 0 2rem 0.5rem;
+  color: var(--unimportant_font_color);
+}
+
+.video_name {
+  font-size: 1.41rem;
+  padding: 0.5rem 0 1rem 1rem;
+
+  color: var(--unimportant_font_color);
+  color: black;
+}
+
+.video_name_icon_container {
+  display: flex;
+  padding: 0.5rem 0;
+  /* background-color: red; */
+}
+.video_name_icon_container:hover {
+  background-color: red;
+}

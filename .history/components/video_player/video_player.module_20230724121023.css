@@ -1,0 +1,13 @@
+.test {
+  font-size: 2rem;
+}
+
+.video_player {
+  width: 50%;
+  height: 70&;
+
+  margin: 0 auto;
+  height: auto;
+  background-color: black;
+  position: relative;
+}

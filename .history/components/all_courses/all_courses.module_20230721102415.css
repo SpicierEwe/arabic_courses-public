@@ -1,0 +1,15 @@
+.title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.image {
+  display: block;
+  width: 20px;
+  height: 5px;
+  object-fit: cover;
+  border-radius: 5px;
+}

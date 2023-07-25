@@ -1,0 +1,23 @@
+.container {
+}
+
+.hero_container {
+  background: rgb(57, 101, 137);
+  background: -moz-linear-gradient(
+    106deg,
+    rgba(57, 101, 137, 1) 0%,
+    rgba(32, 140, 63, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    106deg,
+    rgba(57, 101, 137, 1) 0%,
+    rgba(32, 140, 63, 1) 100%
+  );
+  background: linear-gradient(
+    106deg,
+    rgba(57, 101, 137, 1) 0%,
+    rgba(32, 140, 63, 1) 100%
+  );
+  filter: progid
+  background-color: white;
+}

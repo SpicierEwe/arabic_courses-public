@@ -1,0 +1,118 @@
+.main_container {
+  width: 100%;
+  height: 100vh;
+
+  /* background-color: olive; */
+  overflow: hidden;
+}
+
+.side_nav_container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: var(--accent-color);
+
+  padding: 0 3rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.main_content_container {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.section_name,
+.dvd_name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  /* color: var(--unimportant_font_color); */
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+
+  margin-top: 1rem;
+}
+
+.dvd_container {
+  border-radius: 0.5rem;
+  /* background-color: var(--accent-color); */
+  margin: 2.5rem 0 2.5rem 0;
+  cursor: pointer;
+}
+
+.dvd_name {
+  font-size: 1.3rem;
+  margin: 2rem 0 2rem 0.5rem;
+}
+
+.video_name {
+  font-size: 1.41rem;
+
+  line-height: 1.35;
+  flex: 5;
+}
+
+/* video name and icon container */
+.video_name_icon_container {
+  display: flex;
+  padding: 0.5rem 0;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 0.5rem solid transparent;
+  color: #616060;
+}
+.video_name_icon_container:hover {
+  border-left: 0.5rem solid var(--primary-color);
+  box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 0 1rem 1rem 0;
+  color: black;
+}
+
+.play_icon {
+  flex: 1;
+  font-size: 2.5rem;
+}
+
+.side_nav_open {
+  opacity: 1;
+  transform: translateX(0%);
+
+  transition: all 0.5s ease-in-out;
+}
+
+.side_nav_close {
+  opacity: 0;
+  transform: translateX(-100%);
+
+  transition: all 0.5s ease-in-out;
+}
+
+.side_nav_icon_inside_side_nav {
+  margin-bottom: 7rem;
+  margin-top: 3rem;
+}
+.side_nav_icon_outside_side_nav {
+  position: absolute;
+}
+
+@media (min-width: 1024px) {
+  .side_nav_container {
+    width: 23%;
+    background-color: pink;
+    z-index: 1;
+  }
+
+  .main_content_container {
+    position: relative;
+    width: 77%;
+  }
+}

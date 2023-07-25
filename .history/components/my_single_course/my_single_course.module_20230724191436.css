@@ -1,0 +1,10 @@
+.main_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: olive;
+  overflow-y: scroll;
+  padding: 4rem 0;
+}
