@@ -1,0 +1,46 @@
+.main_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  /* background-color: olive; */
+  overflow: hidden;
+}
+
+.main_content_container {
+  width: 100%;
+  height: 100%;
+  /* background-color: blue; */
+
+  position: relative;
+  overflow-y: auto;
+}
+
+.side_nav_icon_outside_side_nav {
+  align-self: flex-start;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.alert {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1024px) {
+  /* removing the hide side nav feature for desktop cause we dont need in desktops cause of big screens  */
+  .side_nav_icon_inside_side_nav,
+  .side_nav_icon_outside_side_nav {
+    display: none;
+  }
+  .side_nav_close,
+  .side_nav_open {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  /* ---------------------------------- */
+}

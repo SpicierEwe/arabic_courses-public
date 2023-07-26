@@ -1,0 +1,49 @@
+.main_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  /* background-color: olive; */
+  overflow: hidden;
+}
+
+.main_content_container {
+  width: 100%;
+  height: 100%;
+  /* background-color: blue; */
+
+  position: relative;
+  overflow-y: auto;
+}
+
+@media (min-width: 1024px) {
+  .side_nav_container {
+    width: 21%;
+    height: 100%;
+
+    background-color: var(--accent-color);
+
+    padding: 10rem 3rem;
+
+    position: relative;
+  }
+
+  .main_content_container {
+    position: relative;
+    width: 79%;
+  }
+}
+
+.notified {
+  background-color: greenyellow;
+  font-size: 2rem;
+
+  border-radius: 0.5rem;
+  padding: 5rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}

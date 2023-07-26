@@ -1,0 +1,19 @@
+.pdf_displayer {
+  width: 100%;
+  height: 100vh;
+}
+
+.side_nav_container {
+  width: 70%;
+  height: 100%;
+
+  background-color: var(--accent-color);
+
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .side_nav_container {
+    display: none;
+  }
+}

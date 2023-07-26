@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: black;
+  padding: 1rem 5.5rem;
+  font-size: 1.4rem;
+}
+
+.navbarMenu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 2.1rem;
+}
+
+.navbarMenu li {
+  margin-left: 1rem;
+}
+
+.navbarMenu p {
+  text-decoration: none;
+  background-color: var(--accent-color);
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.navbarMenu p:hover {
+  background-color: var(--primary-color);
+  color: white;
+  scale: 1.01;
+}

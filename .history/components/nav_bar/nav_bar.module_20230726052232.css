@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.navbarMenu {
+  list-style: none;
+  display: flex;
+}
+
+.navbarMenu li {
+  margin-left: 1rem;
+}
+
+.navbarMenu p {
+  text-decoration: none;
+  background-color: var(--accent-color);
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.navbarMenu p:hover {
+  background-color: var(--primary-color);
+}

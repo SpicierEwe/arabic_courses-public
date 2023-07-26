@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: black;
+  padding: 1rem 5.5rem;
+  font-size: 1.4rem;
+}
+
+.navbarMenu {
+  background-color: red;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 1.9rem;
+}
+
+.navbarMenu li {
+  margin-left: 1rem;
+  text-decoration: none;
+  /* background-color: var(--accent-color); */
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.navbarMenu li:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.x {
+  background-color: pink;
+  display: flex;
+  justify-content: end;
+  /* align-items: center; */
+}

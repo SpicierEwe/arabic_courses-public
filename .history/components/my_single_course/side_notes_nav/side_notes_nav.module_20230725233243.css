@@ -1,0 +1,61 @@
+.pdf_displayer {
+  width: 100%;
+  height: 100vh;
+}
+
+.side_nav_container {
+  background-color: red;
+  width: 0;
+  opacity: 0;
+  transform: translateX(200);
+
+  background-color: var(--accent-color);
+
+  position: relative;
+}
+
+.open_side_notes_nav {
+  width: 70%;
+  height: 100%;
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 0.5s ease-in-out;
+}
+
+.close_button_container {
+  position: absolute;
+  z-index: 100;
+  background-color: var(--primary-color);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem 0 0 1rem;
+  border-left: 0.2rem solid white;
+  border-top: 0.2rem solid white;
+  border-bottom: 0.2rem solid white;
+
+  top: 1rem;
+  transform: translateX(-100%);
+  font-size: 5rem;
+
+  font-size: 2.3rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close_button_container:hover {
+  border-left: 0.2rem solid var(--primary-color);
+  border-top: 0.2rem solid var(--primary-color);
+  border-bottom: 0.2rem solid var(--primary-color);
+  background-color: white;
+  padding-right: 3rem;
+  color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .side_nav_container {
+    display: none;
+  }
+}

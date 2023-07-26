@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent-color);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.navbarLogo img {
+  width: 100px;
+}
+
+.navbarMenu {
+  list-style: none;
+  display: flex;
+}
+
+.navbarMenu li {
+  margin-left: 1rem;
+}
+
+.navbarMenu p {
+  color: #fff;
+  text-decoration: none;
+  background-color: purple;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.navbarMenu p:hover {
+  text-decoration: underline;
+}
