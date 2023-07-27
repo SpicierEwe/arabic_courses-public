@@ -1,0 +1,10 @@
+// Create an HOC named "withAuth" to handle authentication check
+// and pass the authenticated state as a prop to the wrapped component.
+
+export default function  withAuth () => {
+  // Perform authentication check here.
+  const isAuthenticated = checkIfUserIsAuthenticated();
+
+  // Return a new functional component that wraps the original component.
+ 
+};

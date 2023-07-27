@@ -1,0 +1,27 @@
+.bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  max-width: 120rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  background-color: aqua;
+}
+
+.sign_in_options_container {
+  position: absolute;
+}
+
+.sign_in_option {
+}
+
+.icon {
+  font-size: 3.5rem;
+}
