@@ -1,0 +1,53 @@
+import { initFirebase } from "@/Firebase/firebase";
+import {
+  getDatabase,
+  ref,
+  set,
+  update,
+  push,
+  child,
+  get,
+} from "firebase/database";
+
+export default async function handler(req, res) {
+  const { courseId, userId } = req.query;
+
+  console.log(req.query);
+
+  const result = await check_if_user_is_enrolled(userId, courseId);
+
+  res.status(200).json({ result });
+}
+
+async function check_if_user_is_enrolled(userId, courseId) {
+  const app = initFirebase();
+  const db = getDatabase();
+  const reff = ref(db, "users/" + userId);
+  const enreolled_courses_ref = ref(
+    db,
+    "users/" + userId + "/enrolled_courses"
+  );
+
+  // Push the courseId to the enrolled_courses array.
+  const x = push(reff);
+
+  get(child(reff, "enrolled_courses")).then((snapshot) => {
+    if (snapshot.exists()) {
+      console.log(snapshot.val());
+      const data = snapshot.val();
+      data.map((existingCourseID) => {
+        if (existingCourseID === courseId) {
+          console.log("course already exists");
+
+          return;
+        } else {
+          set(enreolled_courses_ref, [...data, "this is the new one"]);
+        }
+      });
+    } else {
+      console.log("No data available");
+
+      set(enreolled_courses_ref, [courseId]);
+    }
+  });
+}
