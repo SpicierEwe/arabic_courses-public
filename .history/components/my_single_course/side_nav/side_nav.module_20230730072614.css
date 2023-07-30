@@ -1,0 +1,6 @@
+.nav_container {
+  display: absolute;
+  background-color: red;
+
+  height: 100%;
+}

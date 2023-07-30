@@ -1,0 +1,116 @@
+.navbar_desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: black;
+  padding-left: 5.5rem;
+  font-size: 1.4rem;
+  /* background-color: aqua; */
+  /* position: fixed; */
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar_desktopMenu {
+  /* background-color: red; */
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 1.9rem;
+}
+
+.navbar_desktopMenu li {
+  margin-left: 1rem;
+  text-decoration: none;
+  /* background-color: var(--accent-color); */
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar_desktopMenu li:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.nav_right_container {
+  /* background-color: pink; */
+  display: flex;
+
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.user_container {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  cursor: pointer;
+  /* this determines the entire navbar_desktop top padding
+  cause the padding is given by the padding of the user_container */
+  padding: 1rem 1.5rem;
+  padding-right: 5.5rem;
+  background-color: var(--accent-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.user_container:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.user_container:hover .user_image {
+  border: 2px solid white;
+}
+
+.user_image {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.user_name_container {
+  max-width: 15rem;
+}
+
+.user_name {
+  font-size: 1.5rem;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis;
+}
+
+.navbar_mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar_desktop {
+    display: none;
+  }
+  .navbar_mobile {
+    display: block;
+    display: flex;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  .navbar_mobile_container_left {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+  }
+}

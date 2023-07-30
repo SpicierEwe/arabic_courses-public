@@ -1,0 +1,17 @@
+.nav_container_bg {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  padding: 0 3rem;
+  padding-top: 10rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.nav {
+  width: 70%;
+  height: 100%;
+  background-color: olive;
+}
