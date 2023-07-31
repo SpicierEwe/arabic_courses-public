@@ -132,7 +132,7 @@ export default function MySingleCourseDisplayComponent({ course_id }) {
 
   useEffect(() => {
     const lastWatchedVideo = JSON.parse(
-      localStorage.getItem(`last_watched_video_${courseId}`)
+      localStorage.getItem("last_watched_video")
     );
 
     if (lastWatchedVideo) {

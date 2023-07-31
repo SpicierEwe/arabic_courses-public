@@ -18,7 +18,7 @@ const context = {
     endedVideoForCourseId: "",
   },
 
-  setVideoEndedData: (value) => {},
+  setVideoEndedId: (value) => {},
 };
 
 // Create the VideoPlayerContext outside the VideoPlayerProvider function

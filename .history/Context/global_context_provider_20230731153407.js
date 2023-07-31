@@ -28,7 +28,7 @@ function VideoPlayerProvider({ children }) {
   const [isNotified, setIsNotified] = useState(false);
   const [isSideNodesNavOpen, setIsSideNotesNavOpen] = useState();
   const [selectedPdfUrl, setSelectedPdfUrl] = useState();
-  const [videoEndedData, setVideoEndedData] = useState();
+  const [videoEndedData, setVideoEndedData] = useState({});
 
   const handleSetNotified = (value) => {
     setIsNotified(value);

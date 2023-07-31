@@ -25,12 +25,12 @@ export default function VideoPlayer({ video_url, videoId, courseId }) {
 
   useEffect(() => {
     videoRef.current.addEventListener("ended", () => {
-      ctx.setVideoEndedData({
-        endedVideoId: videoId,
-        endedVideoForCourseId: courseId,
+      ctx.setVideoEndedId({
+        videoId: videoId,
+        courseId: courseId,
       });
     });
-  }, [videoId, courseId, ctx]);
+  }, [videoId, ctx]);
 
   return (
     <div className={styles.container}>

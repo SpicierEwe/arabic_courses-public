@@ -33,24 +33,26 @@ export default function MyCoursesComponent() {
       <section className={styles.grid}>
         {enrolled_courses_list.map((course, index) => {
           return (
-            <div key={index} className={styles.card}>
-              <Image
-                className={styles.course_image}
-                src={course.course_image_link}
-                alt="Picture of the author"
-                width={1000}
-                height={1000}
-              ></Image>
-              <div className={styles.course_info_container}>
-                <h2 className={styles.course_name}>{course.course_name}</h2>
-                <Link href={"/my-courses/" + course.course_id} key={index}>
-                  <div className={styles.button}>
-                    <p>Continue</p>
-                    <FaLongArrowAltRight className={styles.arrow_icon} />
-                  </div>
-                </Link>
+            <Link href={"/my-courses/" + course.course_id} key={index}>
+              <div className={styles.card}>
+                <Image
+                  className={styles.course_image}
+                  src={course.course_image_link}
+                  alt="Picture of the author"
+                  width={1000}
+                  height={1000}
+                ></Image>
+                <div className={styles.course_info_container}>
+                  <h2 className={styles.course_name}>{course.course_name}</h2>
+                  <Link href={"/my-courses/" + course.course_id} key={index}>
+                    <div className={styles.button}>
+                      <p>Continue</p>
+                      <FaLongArrowAltRight className={styles.arrow_icon} />
+                    </div>
+                  </Link>
+                </div>
               </div>
-            </div>
+            </Link>
           );
         })}
       </section>

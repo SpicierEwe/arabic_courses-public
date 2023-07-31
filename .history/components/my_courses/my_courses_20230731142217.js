@@ -7,7 +7,6 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import styles from "./my_courses.module.css";
 import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import Link from "next/link";
 
 export default function MyCoursesComponent() {
   const auth = getAuth();
@@ -43,12 +42,10 @@ export default function MyCoursesComponent() {
               ></Image>
               <div className={styles.course_info_container}>
                 <h2 className={styles.course_name}>{course.course_name}</h2>
-                <Link href={"/my-courses/" + course.course_id} key={index}>
-                  <div className={styles.button}>
-                    <p>Continue</p>
-                    <FaLongArrowAltRight className={styles.arrow_icon} />
-                  </div>
-                </Link>
+                <div className={styles.button}>
+                  <p>Continue</p>
+                  <FaLongArrowAltRight className={styles.arrow_icon} />
+                </div>
               </div>
             </div>
           );

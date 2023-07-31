@@ -110,7 +110,7 @@ export default function MySingleCourseDisplayComponent({ course_id }) {
 
   useEffect(() => {
     const lastWatchedVideo = JSON.parse(
-      localStorage.getItem(`last_watched_video_${courseId}`)
+      localStorage.getItem("last_watched_video")
     );
 
     // if there is no lasted watched videdo found default to the initial data which selects the 1st video by default
@@ -132,7 +132,7 @@ export default function MySingleCourseDisplayComponent({ course_id }) {
 
   useEffect(() => {
     const lastWatchedVideo = JSON.parse(
-      localStorage.getItem(`last_watched_video_${courseId}`)
+      localStorage.getItem("last_watched_video")
     );
 
     if (lastWatchedVideo) {

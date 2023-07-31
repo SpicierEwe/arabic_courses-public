@@ -13,12 +13,9 @@ const context = {
   selectedPdfUrl: "",
   setSelectedPdfUrl: (value) => {},
 
-  videoEndedData: {
-    endedVideoId: "",
-    endedVideoForCourseId: "",
-  },
+  videoEndedData: {},
 
-  setVideoEndedData: (value) => {},
+  setVideoEndedId: (value) => {},
 };
 
 // Create the VideoPlayerContext outside the VideoPlayerProvider function

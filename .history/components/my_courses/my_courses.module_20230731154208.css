@@ -44,7 +44,8 @@
 }
 
 .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .course_image {
@@ -90,7 +91,7 @@
 }
 
 .button:hover {
-  transform: translateY(-0.3rem);
+  /* transform: translateY(-0.3rem); */
   box-shadow: 0 0.5rem 3.5rem rgba(0, 0, 0, 0.05);
   background-color: var(--primary-color);
   color: white;

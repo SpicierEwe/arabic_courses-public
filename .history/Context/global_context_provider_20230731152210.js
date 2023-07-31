@@ -13,12 +13,9 @@ const context = {
   selectedPdfUrl: "",
   setSelectedPdfUrl: (value) => {},
 
-  videoEndedData: {
-    endedVideoId: "",
-    endedVideoForCourseId: "",
-  },
+  videoEndedData: {},
 
-  setVideoEndedData: (value) => {},
+  setVideoEndedId: (value) => {},
 };
 
 // Create the VideoPlayerContext outside the VideoPlayerProvider function
@@ -28,7 +25,7 @@ function VideoPlayerProvider({ children }) {
   const [isNotified, setIsNotified] = useState(false);
   const [isSideNodesNavOpen, setIsSideNotesNavOpen] = useState();
   const [selectedPdfUrl, setSelectedPdfUrl] = useState();
-  const [videoEndedData, setVideoEndedData] = useState();
+  const [videoEndedData, setVideoEndedId] = useState();
 
   const handleSetNotified = (value) => {
     setIsNotified(value);
@@ -44,7 +41,7 @@ function VideoPlayerProvider({ children }) {
   };
 
   const handleSetVideoEnded = (videoId) => {
-    setVideoEndedData(videoId);
+    setVideoEndedId(videoId);
   };
 
   const context = {
@@ -57,8 +54,8 @@ function VideoPlayerProvider({ children }) {
     selectedPdfUrl: selectedPdfUrl,
     setSelectedPdfUrl: handleSetSelectedPdfUrl,
 
-    videoEndedData: videoEndedData,
-    setVideoEndedData: handleSetVideoEnded,
+    videoEndedId: videoEndedData,
+    setVideoEndedId: handleSetVideoEnded,
   };
 
   return (

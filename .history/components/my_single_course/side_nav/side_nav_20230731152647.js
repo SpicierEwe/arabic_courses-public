@@ -74,7 +74,7 @@ export default function SideNavComponent({
     //  ============================================================
     // ================== video completed checker ==================
     useEffect(() => {
-      if (ctx.videoEndedData !== undefined) {
+      if (ctx.videoEndedData !== null) {
         const endedVideoId = ctx.videoEndedData.endedVideoId;
         const endedVideoForCourseId = ctx.videoEndedData.endedVideoForCourseId;
         // console.log("this is the side nav bar id: ", videoId);
