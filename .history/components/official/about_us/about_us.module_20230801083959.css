@@ -1,0 +1,26 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  color: #333;
+}
+
+.hero_section {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero_section > div > h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.hero_section > div > h1 {
+  font-size: 21rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 2rem;
+}

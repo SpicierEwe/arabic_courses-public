@@ -1,0 +1,54 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  color: #333;
+}
+
+.hero_bg {
+}
+
+.hero_section {
+  /* background-color: var(--primary-color); */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero_section > div > h2 {
+  font-size: 9rem;
+  font-weight: 700;
+  color: rgb(214, 210, 210);
+}
+
+.hero_section > div > h1 {
+  font-size: 21rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 2rem;
+
+  background: rgb(131, 58, 180);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
