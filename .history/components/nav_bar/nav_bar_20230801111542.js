@@ -45,17 +45,10 @@ export default function NavbarComponent(props) {
     <div>
       {/* desktop navbar */}
       <nav className={styles.navbar_desktop} id="top_nav_bar">
-        {/* nav LOGO */}
-        <Link href={"/"}>
-          <Image
-            className={styles.navbarLogo}
-            src="/images/logo/logo.png"
-            width={1000}
-            height={1000}
-            alt="logo"
-          ></Image>
-        </Link>
-
+        <div className={styles.navbarLogo}>
+          {/* nav LOGO */}
+          <Image href="/images/logo/logo.png">=</Image>
+        </div>
         <div className={styles.nav_right_container}>
           {/* nav items */}
           <ul className={styles.navbar_desktop_menu}>

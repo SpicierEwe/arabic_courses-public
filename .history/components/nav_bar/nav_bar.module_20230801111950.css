@@ -93,9 +93,9 @@
   display: none;
 }
 
-.navbarLogo {
-  width: auto;
-  height: 3.5rem;
+.nav_bar_logo {
+  width: 10rem;
+  height: 10rem;
   object-fit: cover;
   cursor: pointer;
 }

@@ -46,15 +46,14 @@ export default function NavbarComponent(props) {
       {/* desktop navbar */}
       <nav className={styles.navbar_desktop} id="top_nav_bar">
         {/* nav LOGO */}
-        <Link href={"/"}>
-          <Image
-            className={styles.navbarLogo}
-            src="/images/logo/logo.png"
-            width={1000}
-            height={1000}
-            alt="logo"
-          ></Image>
-        </Link>
+        <Link href={"/"}></Link>
+        <Image
+          className={styles.navbarLogo}
+          src="/images/logo/logo.png"
+          width={1000}
+          height={1000}
+          alt="logo"
+        ></Image>
 
         <div className={styles.nav_right_container}>
           {/* nav items */}

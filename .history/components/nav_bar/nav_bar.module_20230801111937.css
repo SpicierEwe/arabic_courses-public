@@ -93,11 +93,7 @@
   display: none;
 }
 
-.navbarLogo {
-  width: auto;
-  height: 3.5rem;
-  object-fit: cover;
-  cursor: pointer;
+.nav_bar_logo {
 }
 
 @media (max-width: 768px) {

@@ -94,8 +94,8 @@
 }
 
 .navbarLogo {
-  width: auto;
-  height: 3.5rem;
+  width: 10rem;
+  height: 10rem;
   object-fit: cover;
   cursor: pointer;
 }
