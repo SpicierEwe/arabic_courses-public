@@ -1,0 +1,80 @@
+.notification {
+  display: flex;
+
+  align-items: center;
+  /* column-gap: 1rem; */
+  position: fixed;
+  top: 70px;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  max-width: 35rem;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.3s ease;
+  background-color: var(--accent-color);
+
+  border: 1px solid var(--primary-color);
+}
+
+.bell_container {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.bell_icon {
+  font-size: 2.5rem;
+  /* color: var(--primary-color); */
+}
+
+.notification > p {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  border-left: 1px solid var(--primary-color);
+
+  position: relative;
+  /* Set your desired width, height, and other styles here */
+  width: 300px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* Add some padding and border-radius to improve the effect */
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.notification > p::before{
+    .frost-glass::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        /* Increase or decrease the blur amount to adjust the frost effect */
+        backdrop-filter: blur(8px);
+        /* Add opacity to control the intensity of the frost effect */
+        opacity: 0.7;
+        /* You can also use background-image with a semi-transparent PNG instead of the background-color and opacity combination */
+      }
+      In this example, we create a div with the class "frost-glass" to apply the effect. The ::before pseudo-element is used to create the blurred overlay, and the backdrop-filter property is set to "blur(8px)" to create the frost effect. Adjust the backdrop-filter blur value and the opacity property as needed to achieve the desired level of frost glass effect.
+      
+      Keep in mind that browser support for the backdrop-filter property might vary, and it may not work in older browsers. Make sure to test the effect in different browsers to ensure compatibility.
+      
+      
+      
+      
+      
+      
+}
