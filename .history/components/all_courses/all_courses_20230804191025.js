@@ -154,10 +154,7 @@ export function AllCoursesDisplayComponent() {
                               : averageRating[index]
                           )}
                         </div>
-                        {averageRating[index] == "NaN"
-                          ? 0
-                          : averageRating[index]}{" "}
-                        / 5 |&nbsp; {totalReviews[index]}
+                        {averageRating[index]} / 5 |&nbsp; {totalReviews[index]}
                         &nbsp; ratings
                       </div>
                       {/* difficulty and duration */}

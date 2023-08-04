@@ -151,18 +151,17 @@ export function AllCoursesDisplayComponent() {
                           {display_stars_function(
                             averageRating[index] == "NaN"
                               ? 0
-                              : averageRating[index]
+                              : averageRating[index],
+                            20
                           )}
                         </div>
-                        {averageRating[index] == "NaN"
-                          ? 0
-                          : averageRating[index]}{" "}
-                        / 5 |&nbsp; {totalReviews[index]}
+                        {averageRating[index]} / 5 |&nbsp; {totalReviews[index]}
                         &nbsp; ratings
                       </div>
                       {/* difficulty and duration */}
                       <p className={styles.difficulty_and_duration}>
-                        {course_info["difficulty"]} - {course_info["duration"]}
+                        {course_info["difficulty"]} &#8212;{" "}
+                        {course_info["duration"]}
                       </p>
                     </div>
                   </div>

@@ -41,14 +41,14 @@ export default function SignInComponent() {
       name: "Sign in with Apple",
       icon: <AiFillApple className={styles.icon} />,
       link: "/",
-      onClick: null,
+      onClick: signInWithApple,
     },
 
     {
       name: "Sign in with Facebook",
       icon: <BsFacebook className={styles.icon} />,
       link: "/",
-      onClick: null,
+      onClick: signInWithGoogle,
     },
   ];
 

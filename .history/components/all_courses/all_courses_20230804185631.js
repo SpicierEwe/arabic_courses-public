@@ -42,18 +42,18 @@ export function AllCoursesDisplayComponent() {
 
   // let courses_info = await fetch_courses_info();
 
-  const [averageRating, setAverageRating] = useState([]);
-  const [totalReviews, setTotalReviews] = useState([]);
+  const [averageRating, setAverageRating] = useState(0);
+  const [totalReviews, setTotalReviews] = useState(0);
 
-  const [courses_rating, setCoursesRating] = useState([]);
+  const courses_rating = [];
+
   useEffect(() => {
-    const dbRef = ref(getDatabase());
+    const dbRef = getDatabase();
     courses_info.forEach((course) => {
       const course_id = course["course_id"];
-      const y = [];
 
       // Fetch the ratings from the database
-      get(child(dbRef, `courses/${course_id}/ratings`))
+      get(child(dbRef, `courses/${course["course_id"]}/ratings`))
         .then((snapshot) => {
           if (snapshot.exists()) {
             const data = snapshot.val();
@@ -82,11 +82,8 @@ export function AllCoursesDisplayComponent() {
             const averageRating = totalWeightedSum / totalRatings;
 
             // Set the average rating
-
-            setAverageRating((prev) => [
-              ...prev,
-              averageRating.toString().padEnd(3, ".0"),
-            ]);
+            courses_rating.push(averageRating);
+            setAverageRating(averageRating.toString().padEnd(3, ".0"));
             // console.log("average rating = ", averageRating);
           }
         })
@@ -95,7 +92,7 @@ export function AllCoursesDisplayComponent() {
             (snapshot) => {
               if (snapshot.exists()) {
                 const data = snapshot.val();
-                setTotalReviews((prev) => [...prev, data]);
+                setTotalReviews(data);
               }
             }
           );
@@ -148,21 +145,16 @@ export function AllCoursesDisplayComponent() {
                       {/* review stars */}
                       <div className={styles.review_container}>
                         <div style={{ display: "inline-flex" }}>
-                          {display_stars_function(
-                            averageRating[index] == "NaN"
-                              ? 0
-                              : averageRating[index]
-                          )}
+                          {display_stars_function(course_info["rating"])}
                         </div>
-                        {averageRating[index] == "NaN"
-                          ? 0
-                          : averageRating[index]}{" "}
-                        / 5 |&nbsp; {totalReviews[index]}
+                        {courses_rating[index]} / 5 |
+                        {course_info["rating_count"]}
                         &nbsp; ratings
                       </div>
                       {/* difficulty and duration */}
                       <p className={styles.difficulty_and_duration}>
-                        {course_info["difficulty"]} - {course_info["duration"]}
+                        {course_info["difficulty"]} &#8212;{" "}
+                        {course_info["duration"]}
                       </p>
                     </div>
                   </div>

@@ -41,14 +41,14 @@ export default function SignInComponent() {
       name: "Sign in with Apple",
       icon: <AiFillApple className={styles.icon} />,
       link: "/",
-      onClick: null,
+      onClick: signInWithApple,
     },
 
     {
       name: "Sign in with Facebook",
       icon: <BsFacebook className={styles.icon} />,
       link: "/",
-      onClick: null,
+      onClick: signInWithGoogle,
     },
   ];
 
@@ -68,9 +68,7 @@ export default function SignInComponent() {
               return (
                 <div
                   key={index}
-                  className={`${styles.sign_in_option} ${
-                    index == 1 || index == 2 ? styles.unavailable_options : null
-                  }`}
+                  className={`${styles.sign_in_option}`}
                   onClick={item.onClick}
                 >
                   {/* icon */}

@@ -83,10 +83,7 @@ export function AllCoursesDisplayComponent() {
 
             // Set the average rating
 
-            setAverageRating((prev) => [
-              ...prev,
-              averageRating.toString().padEnd(3, ".0"),
-            ]);
+            setAverageRating(averageRating.toString().padEnd(3, ".0"));
             // console.log("average rating = ", averageRating);
           }
         })
@@ -95,7 +92,7 @@ export function AllCoursesDisplayComponent() {
             (snapshot) => {
               if (snapshot.exists()) {
                 const data = snapshot.val();
-                setTotalReviews((prev) => [...prev, data]);
+                setTotalReviews(data);
               }
             }
           );
@@ -148,21 +145,15 @@ export function AllCoursesDisplayComponent() {
                       {/* review stars */}
                       <div className={styles.review_container}>
                         <div style={{ display: "inline-flex" }}>
-                          {display_stars_function(
-                            averageRating[index] == "NaN"
-                              ? 0
-                              : averageRating[index]
-                          )}
+                          {display_stars_function(course_info["rating"])}
                         </div>
-                        {averageRating[index] == "NaN"
-                          ? 0
-                          : averageRating[index]}{" "}
-                        / 5 |&nbsp; {totalReviews[index]}
+                        {averageRating[index]} / 5 |{totalReviews[index]}
                         &nbsp; ratings
                       </div>
                       {/* difficulty and duration */}
                       <p className={styles.difficulty_and_duration}>
-                        {course_info["difficulty"]} - {course_info["duration"]}
+                        {course_info["difficulty"]} &#8212;{" "}
+                        {course_info["duration"]}
                       </p>
                     </div>
                   </div>
