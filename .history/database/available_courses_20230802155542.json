@@ -1,0 +1,210 @@
+[
+  {
+    "course_info": {
+      "course_name": "Mastering Madina Arabic",
+      "language": "English",
+      "course_id": "69507db41e854",
+      "course_image_link": "/images/mma.jpg",
+      "offered_by": "AbdurRahman.Org",
+      "outcome": "It helps acquire an understanding of hundreds of Qur’anic verses, ahadith, Arabic parables and poetry.",
+      "difficulty": "Beginner to Advanced",
+      "duration": "Self-paced | 3-6 months approx",
+      "sections": [
+        {
+          "section": "1",
+          "section_name": "Book 1",
+          "sub_section_count": "9",
+          "video_count": "44"
+        },
+        {
+          "section": "1",
+          "section_name": "Book 2",
+          "sub_section_count": "16",
+          "video_count": "97"
+        },
+        {
+          "section": "1",
+          "section_name": "Book 3",
+          "sub_section_count": "23",
+          "video_count": "145"
+        }
+      ],
+      "description": "Use the below resources for studying and mastering the Books 1,2 and 3 of “Lessons in Arabic language” [as taught at the Islaamic University of Madeenah] written by Shaykh Dr. V. ‘Abdur-Raheem. The ARABIC COURSE for English-Speaking students is a comprehensive and popular course for the teaching of the Qura’anic and Traditional Arabic, originally devised and taught at the renowned Madinah Islamic University catering for the non-Arabic speaking students from all over the world. Over the years, this course has enabled students to become competent in their use of the Arabic language and to participate and benefit from scholarly pursuits such as Qur’anic exegesis, hadith, fiqh, serah, history, and classical and modern Arabic literature.<br></br>* It is concise (consisting of only three books, reasonably short) but extensive in their coverage.<br></br>* It combines modern Arabic vocabulary with Islamic terminology used in the Qur’an and Sunnah.<br></br>* It helps acquire an understanding of hundreds of Qur’anic verses, ahadith, Arabic parables and poetry.",
+
+      "rating": "3.6",
+      "rating_count": "0",
+      "enrolled_count": "0"
+    },
+
+    "course_content": [
+      {
+        "section_id": "1",
+        "section_name": "Book_1",
+        "dvd_count": "9",
+        "parts_alphabets": ["A", "B"],
+        "dvds": [
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 4],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 4]
+        ],
+        "resources": [
+          {
+            "resource_name": "Arabic Text Book",
+            "author": "Dr. V. AbdurRahim",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/01/madina-book-1-arabic-text-dr-v-abdurrahim.pdf"
+          },
+          {
+            "resource_name": "Arabic Solutions",
+            "author": "Dr. V. AbdurRahim",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/08/madina-book-1-arabic-solutions.pdf"
+          },
+          {
+            "resource_name": "English Key",
+            "author": "Dr. V. AbdurRahim",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/08/madina-book-1-english-key.pdf"
+          },
+          {
+            "resource_name": "Urdu Key",
+            "author": "Dr. V. AbdurRahim",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/08/madina-book-1-urdu-key.pdf"
+          },
+          {
+            "resource_name": "Class Notes",
+            "author": "Class Teacher",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/08/madina-book1-notes-abdurrahman-org.pdf"
+          }
+        ]
+      },
+      {
+        "section_id": "2",
+        "section_name": "Book_2",
+        "dvd_count": "16",
+        "parts_alphabets": ["A", "B"],
+        "dvds": [
+          [1, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3]
+        ],
+        "resources": [
+          {
+            "resource_name": "Arabic Text Book",
+            "author": "Dr. V. AbdurRahim",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/01/madina-book-2-arabic-text-dr-v-abdurrahim.pdf"
+          },
+          {
+            "resource_name": "Arabic Solutions",
+            "author": "Dr. V. AbdurRahim",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/08/madina-book-2-arabic-solutions.pdf"
+          },
+          {
+            "resource_name": "English Key",
+            "author": "Dr. V. AbdurRahim",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/08/madina-book-2-english-key.pdf"
+          },
+          {
+            "resource_name": "Urdu Key",
+            "author": "Dr. V. AbdurRahim",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/08/madina-book-2-urdu-key.pdf"
+          },
+          {
+            "resource_name": "Class Notes",
+            "author": "Class Teacher",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/08/madina-book2-notes-abdurrahman-org.pdf"
+          }
+        ]
+      },
+      {
+        "section_id": "3",
+        "section_name": "Book_2",
+        "dvd_count": "9",
+        "parts_alphabets": ["A", "B"],
+        "dvds": [
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 4],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [3, 3],
+          [4, 3],
+          [3, 3],
+          [4, 4],
+          [3, 4],
+          [4, 4]
+        ],
+        "resources": [
+          {
+            "resource_name": "Arabic Text Book",
+            "author": "Dr. V. AbdurRahim",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/01/madina-book-3-arabic-text-dr-v-abdurrahim.pdf"
+          },
+          {
+            "resource_name": "Arabic Solutions",
+            "author": "Dr. V. AbdurRahim",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/08/madina-book-3-arabic-solutions.pdf"
+          },
+          {
+            "resource_name": "English Key",
+            "author": "Dr. V. AbdurRahim",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/08/madina-book-3-english-key.pdf"
+          },
+          {
+            "resource_name": "Urdu Key",
+            "author": "Dr. V. AbdurRahim",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/08/madina-book-3-urdu-key.pdf"
+          },
+          {
+            "resource_name": "Class Notes",
+            "author": "Class Teacher",
+
+            "resource_link": "https://abdurrahmanorg.files.wordpress.com/2014/08/madina-book3-notes-abdurrahman-org.pdf"
+          }
+        ]
+      }
+    ]
+  }
+]

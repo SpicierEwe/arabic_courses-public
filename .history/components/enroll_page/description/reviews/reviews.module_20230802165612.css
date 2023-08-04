@@ -1,0 +1,42 @@
+.container {
+  padding: 10rem 0;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.section_heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.main_review_container {
+  display: flex;
+
+  margin-top: 5rem;
+}
+
+.star_icon {
+  color: #f1c40f;
+  font-size: 10rem;
+  margin-right: 0.5rem;
+}
+
+.global_rating_container {
+  position: relative;
+  width: 30%;
+  background-color: red;
+}
+
+.reviews_container {
+  width: 70%;
+}
+
+.global_rating {
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

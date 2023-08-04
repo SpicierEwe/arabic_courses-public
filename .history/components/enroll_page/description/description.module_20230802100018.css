@@ -1,0 +1,26 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.heading {
+  font-size: 2.75rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.text {
+  font-size: 1.55rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 1.85;
+  padding-right: 25rem;
+  text-align: justify;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 2rem;
+}

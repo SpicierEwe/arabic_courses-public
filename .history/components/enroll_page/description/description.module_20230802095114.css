@@ -1,0 +1,11 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}

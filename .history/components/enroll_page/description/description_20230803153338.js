@@ -1,0 +1,54 @@
+import styles from "./description.module.css";
+import ReviewsComponent from "./reviews/reviews";
+
+export default function Description({ courseInfo , isEnrolled }) {
+  const generate = () => {};
+  return (
+    <div className={styles.container}>
+      <section className={styles.flex}>
+        <div className={styles.c1}>
+          <h2 className={styles.heading}>Summary_</h2>
+          <p
+            className={styles.text}
+            dangerouslySetInnerHTML={{ __html: courseInfo.description }}
+          ></p>
+        </div>
+
+        <div className={styles.c2}>
+          <h2 className={styles.heading}>Outcome_</h2>
+          <p
+            className={styles.text2}
+            dangerouslySetInnerHTML={{ __html: courseInfo.outcome }}
+          ></p>
+        </div>
+      </section>
+
+      <section className={styles.section_2}>
+        <h2 className={styles.heading}>Course Content_</h2>
+
+        <div className={styles.grid}>
+          {courseInfo.sections.map((section, index) => {
+            return (
+              <div key={index} className={styles.grid_item}>
+                {<h2>{section.section_name}</h2>}
+                <div>
+                  {<p className={styles.grid_item_sub_heading}>SUB-SECTIONS</p>}
+                  <p className={styles.info}>{section.sub_sections_count}</p>
+                </div>
+
+                <div>
+                  {<p className={styles.grid_item_sub_heading}>VIDEOS</p>}
+                  <p className={styles.info}>{section.video_count}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <div>
+        <ReviewsComponent course_id={courseInfo.course_id} isEnrolled={} />
+      </div>
+    </div>
+  );
+}
