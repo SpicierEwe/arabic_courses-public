@@ -210,7 +210,8 @@ export default function EnrollPageComponent({ query }) {
                     return <div key={index}>{star}</div>;
                   })}
                 </div>
-                {averageRating !== "NaN" ? averageRating : 0}/5 | {totalReviews}
+                {averageRating !== "NaN" ? averageRating : 0}/5 |{" "}
+                {course_info["rating_count"]}
                 &nbsp; ratings
               </div>
 

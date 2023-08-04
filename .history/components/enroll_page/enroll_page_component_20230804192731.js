@@ -39,64 +39,6 @@ export default function EnrollPageComponent({ query }) {
   const [enrolled_courses_list, setEnrolledCoursesList] = useState([]);
 
   //  this function checks if the course is already enrolled by the user or not
-
-  const [averageRating, setAverageRating] = useState(0);
-  const [totalReviews, setTotalReviews] = useState(0);
-
-  const fetchAverageRating = () => {
-    // Fetch the ratings from the database
-    const dbRef = ref(getDatabase());
-    get(child(dbRef, `courses/${course_id}/ratings`))
-      .then((snapshot) => {
-        if (snapshot.exists()) {
-          const data = snapshot.val();
-          const ratings = [];
-          for (let i = 0; i < 5; i++) {
-            if (data[i + 1] != undefined) {
-              ratings.push(data[i + 1]);
-            } else {
-              ratings.push(0);
-            }
-          }
-
-          console.log(ratings);
-
-          let totalWeightedSum = 0;
-          let totalRatings = 0;
-
-          // Loop through each rating and calculate the weighted sum
-          ratings.forEach((rating, index) => {
-            const ratingValue = index + 1;
-            totalWeightedSum += ratingValue * rating;
-            totalRatings += rating;
-          });
-
-          // Calculate the average rating
-          const averageRating = totalWeightedSum / totalRatings;
-          setAverageRating(averageRating.toString().padEnd(3, ".0"));
-          // console.log("average rating = ", averageRating);
-        }
-      })
-      .then(() => {
-        get(child(dbRef, `courses/${course_id}/total_reviews`)).then(
-          (snapshot) => {
-            if (snapshot.exists()) {
-              const data = snapshot.val();
-              setTotalReviews(data);
-            }
-          }
-        );
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  };
-
-  useEffect(() => {
-    fetchAverageRating();
-  }, []);
-
-  // ====================================================================================================
   function check_if_course_already_enrolled() {
     const dbRef = ref(getDatabase());
     get(child(dbRef, `users/${userId}/enrolled_courses`))
@@ -204,13 +146,13 @@ export default function EnrollPageComponent({ query }) {
               {/* rating container */}
               <div className={styles.rating_container}>
                 <div className={styles.rating_stars}>
-                  {display_stars_function(
-                    averageRating !== "NaN" ? averageRating : 0
-                  ).map((star, index) => {
-                    return <div key={index}>{star}</div>;
-                  })}
+                  {display_stars_function(course_info["rating"]).map(
+                    (star, index) => {
+                      return <div key={index}>{star}</div>;
+                    }
+                  )}
                 </div>
-                {averageRating !== "NaN" ? averageRating : 0}/5 | {totalReviews}
+                {course_info["rating"]}/5 | {course_info["rating_count"]}
                 &nbsp; ratings
               </div>
 

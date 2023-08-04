@@ -92,10 +92,6 @@ export default function EnrollPageComponent({ query }) {
       });
   };
 
-  useEffect(() => {
-    fetchAverageRating();
-  }, []);
-
   // ====================================================================================================
   function check_if_course_already_enrolled() {
     const dbRef = ref(getDatabase());
@@ -204,13 +200,13 @@ export default function EnrollPageComponent({ query }) {
               {/* rating container */}
               <div className={styles.rating_container}>
                 <div className={styles.rating_stars}>
-                  {display_stars_function(
-                    averageRating !== "NaN" ? averageRating : 0
-                  ).map((star, index) => {
-                    return <div key={index}>{star}</div>;
-                  })}
+                  {display_stars_function(course_info["rating"]).map(
+                    (star, index) => {
+                      return <div key={index}>{star}</div>;
+                    }
+                  )}
                 </div>
-                {averageRating !== "NaN" ? averageRating : 0}/5 | {totalReviews}
+                {course_info["rating"]}/5 | {course_info["rating_count"]}
                 &nbsp; ratings
               </div>
 

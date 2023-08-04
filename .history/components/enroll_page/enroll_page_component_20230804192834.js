@@ -204,13 +204,11 @@ export default function EnrollPageComponent({ query }) {
               {/* rating container */}
               <div className={styles.rating_container}>
                 <div className={styles.rating_stars}>
-                  {display_stars_function(
-                    averageRating !== "NaN" ? averageRating : 0
-                  ).map((star, index) => {
+                  {display_stars_function(averageRating).map((star, index) => {
                     return <div key={index}>{star}</div>;
                   })}
                 </div>
-                {averageRating !== "NaN" ? averageRating : 0}/5 | {totalReviews}
+                {course_info["rating"]}/5 | {course_info["rating_count"]}
                 &nbsp; ratings
               </div>
 
