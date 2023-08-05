@@ -54,7 +54,7 @@
             "resource_name": "Handouts",
             "author": "The Institute of the Language of the Qur’an (Toronto)",
 
-            "resource_link": "https://drive.google.com/file/d/1cra_uSc9qSw630OPLgRLCRy-cQTakN09/preview"
+            "resource_link": "handouts/book_1_handout.pdf"
           },
           {
             "resource_name": "Arabic Text Book",
@@ -112,12 +112,6 @@
           [3, 3]
         ],
         "resources": [
-          {
-            "resource_name": "Handouts",
-            "author": "The Institute of the Language of the Qur’an (Toronto)",
-
-            "resource_link": "https://drive.google.com/file/d/1V0LbscldCud1GBle67wdD3x3FYtcHf1w/previ"
-          },
           {
             "resource_name": "Arabic Text Book",
             "author": "Dr. V. AbdurRahim",
@@ -181,12 +175,6 @@
           [4, 4]
         ],
         "resources": [
-          {
-            "resource_name": "Handouts",
-            "author": "The Institute of the Language of the Qur’an (Toronto)",
-
-            "resource_link": "https://drive.google.com/file/d/1V0LbscldCud1GBle67wdD3x3FYtcHf1w/previ"
-          },
           {
             "resource_name": "Arabic Text Book",
             "author": "Dr. V. AbdurRahim",

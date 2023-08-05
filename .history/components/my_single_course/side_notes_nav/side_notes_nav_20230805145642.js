@@ -24,6 +24,7 @@ export default function SideNotesNavComponent() {
         >
           <AiOutlineCloseCircle className={styles.close_button} />
         </div>
+
         <embed
           src={ctx.selectedPdfUrl + "#zoom=fit"}
           type="application/pdf"

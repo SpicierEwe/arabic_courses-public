@@ -24,8 +24,29 @@ export default function SideNotesNavComponent() {
         >
           <AiOutlineCloseCircle className={styles.close_button} />
         </div>
-        <embed
+        {/* <embed
           src={ctx.selectedPdfUrl + "#zoom=fit"}
+          type="application/pdf"
+          height="100%"
+          selection="yes"
+          className={styles.pdf_displayer}
+          // style={{
+          //   height: `${100 - ctx.nav_bar_height + 5}vh`,
+          // }}
+        /> */}
+
+        {/* <iframe
+          src="https://drive.google.com/file/d/1cra_uSc9qSw630OPLgRLCRy-cQTakN09/preview"
+          draggable="true"
+          width="100%"
+          height="100%"
+          allow="autoplay"
+          allowFullScreen={true}
+          movable="true"
+          className={styles.pdf_displayer}
+        ></iframe> */}
+        <embed
+          src="https://drive.google.com/file/d/1cra_uSc9qSw630OPLgRLCRy-cQTakN09/preview"
           type="application/pdf"
           height="100%"
           selection="yes"
